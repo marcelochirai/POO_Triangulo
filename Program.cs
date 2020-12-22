@@ -3,6 +3,14 @@ using System.Globalization;
 
 namespace Course
 {
+
+    /*
+     * CRIE UM PROGRAMA PARA LER AS MEDIDAS DOS LADOS DE
+    DOIS TRIÂNGULOS X E Y (MEDIDAS VÁLIDAS). EM SEGUIDA,
+    MOSTRE O VALOR DAS ÁREAS DOS DOIS TRIÂNGULOS E
+    MOSTRAR QUAL DOS DOIS POSSUI A MAIOR ÁREA.
+    */
+
     public class Program
     {
         public static void Main(string[] args)
@@ -17,12 +25,12 @@ namespace Course
             x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+            double areaX = x.Area();
+
             Console.WriteLine("Informe as medidas dos lados do triângulo Y: ");
             y.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             y.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            double areaX = x.Area();
 
             double areaY = y.Area();
 
